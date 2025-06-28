@@ -10,11 +10,11 @@ class LibraryManager:
             Book("Sapiens", "Yuval Noah Harari", 2011, "History"),
             Book("Python Crash Course", "Eric Matthes", 2015, "Programming"),
             Book("Clean Code", "Robert C. Martin", 2008, "Software Engineering"),
-            Magazine("National Geographic", "Various", 2023, "April"),
-            Magazine("TIME", "Time Editors", 2022, "November"),
-            Magazine("The Economist", "Editorial Board", 2024, "March"),
-            Magazine("Forbes", "Forbes Staff", 2023, "January"),
-            Magazine("Wired", "Condé Nast", 2024, "June"),
+            Magazine("National Geographic", "Various", 2023, "1101"),
+            Magazine("TIME", "Time Editors", 2022, "1102"),
+            Magazine("The Economist", "Editorial Board", 2024, "1103"),
+            Magazine("Forbes", "Forbes Staff", 2023, "1104"),
+            Magazine("Wired", "Condé Nast", 2024, "1105"),
         ]
 
     def add_item(self, item):
