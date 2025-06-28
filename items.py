@@ -8,14 +8,7 @@ class LibraryItem:
     def display_info(self):
         return f"Title: {self.title}, Author: {self.author}, Released: {self.year}, Availability: {'Yes' if self.available else 'No'}"
 
-    def to_dict(self):
-        return {
-            "Title": self.title,
-            "Author": self.author,
-            "Released": self.year,
-            "Availability": "Yes" if self.available else "No",
-        }
-
+    
 
 class Book(LibraryItem):
 
@@ -31,11 +24,7 @@ class Book(LibraryItem):
         print(f"Genre       : {self.genre}")
         print(f"Availability: {'Yes' if self.available else 'No'}")
 
-    def to_dict(self):
-        data = super().to_dict()
-        data["genre"] = self.genre
-        return data
-
+    
 
 class Magazine(LibraryItem):
     def __init__(self, title, author, year, issue_number):
@@ -50,7 +39,4 @@ class Magazine(LibraryItem):
         print(f"Issue Number : {self.issue_number}")
         print(f"Availability : {'Yes' if self.available else 'No'}")
 
-    def to_dict(self):
-        data = super().to_dict()
-        data["issue_number"] = self.issue_number
-        return data
+  
