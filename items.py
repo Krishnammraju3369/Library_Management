@@ -8,7 +8,6 @@ class LibraryItem:
     def display_info(self):
         return f"Title: {self.title}, Author: {self.author}, Released: {self.year}, Availability: {'Yes' if self.available else 'No'}"
 
-    
 
 class Book(LibraryItem):
 
@@ -24,7 +23,6 @@ class Book(LibraryItem):
         print(f"Genre       : {self.genre}")
         print(f"Availability: {'Yes' if self.available else 'No'}")
 
-    
 
 class Magazine(LibraryItem):
     def __init__(self, title, author, year, issue_number):
@@ -38,5 +36,3 @@ class Magazine(LibraryItem):
         print(f"Released     : {self.year}")
         print(f"Issue Number : {self.issue_number}")
         print(f"Availability : {'Yes' if self.available else 'No'}")
-
-  

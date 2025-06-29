@@ -34,7 +34,7 @@ def main():
 
     while True:
         display_menu()
-        print("--------------------------------------------------------------")
+        print("-" * 70)
         number = input(f"please select the option using number (1 to 8) \n")
 
         if number == "1":
